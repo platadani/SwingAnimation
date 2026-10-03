@@ -24,7 +24,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-import ClockHandRotationKit
+import ClockHandKit
 import SwiftUI
 
 /// A modifier that applies a swing animation to a view.
@@ -79,13 +79,13 @@ public struct SwingAnimationModifier: ViewModifier {
                     Color.clear
                     ZStack(alignment: alignment) {
                         Color.clear
-                        content.clockHandRotationEffect(period: .custom(duration))
+                        content.clockHandRotationEffect(period: .custom(Double(duration)))
                     }
                     .frame(width: innerDiameter, height: innerDiameter)
-                    .clockHandRotationEffect(period: .custom(-duration / 2))
+                    .clockHandRotationEffect(period: .custom(-Double(duration) / 2))
                 }
                 .frame(width: length, height: length)
-                .clockHandRotationEffect(period: .custom(duration))
+                .clockHandRotationEffect(period: .custom(Double(duration)))
             }
             .frame(width: size.width, height: size.height, alignment: alignment)
         }

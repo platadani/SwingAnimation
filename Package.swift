@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "SwingAnimation",
     platforms: [
-        .iOS(.v14)
+        .iOS(.v16)
     ],
     products: [
         .library(
@@ -15,13 +15,13 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/octree/ClockHandRotationKit", from: "1.0.0")
+        .package(url: "https://github.com/giljihun/ClockHandKit.git", from: "0.1.2")
     ],
     targets: [
         .target(
             name: "SwingAnimation",
             dependencies: [
-                "ClockHandRotationKit"
+                "ClockHandKit"
             ]
         ),
         .testTarget(
