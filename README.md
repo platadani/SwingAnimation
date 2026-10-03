@@ -1,8 +1,10 @@
 # SwingAnimation
 [![SPM](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/)
-![CI](https://github.com/TopWidgets/SwingAnimation/actions/workflows/push.yml/badge.svg)
+![CI](https://github.com/platadani/SwingAnimation/actions/workflows/push.yml/badge.svg)
 
 **SwingAnimation** is a framework allows you to apply smooth animations in widgets.
+
+> This is a fork of [TopWidgets/SwingAnimation](https://github.com/TopWidgets/SwingAnimation) that uses [ClockHandKit](https://github.com/giljihun/ClockHandKit) instead of [ClockHandRotationKit](https://github.com/octree/ClockHandRotationKit), which no longer animates in apps built with Xcode 26.1+ on iOS 26.1+.
 
 ## Example
 
@@ -26,7 +28,7 @@ content
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/TopWidgets/SwingAnimation.git", .upToNextMajor(from: "1.0.0"))
+    .package(url: "https://github.com/platadani/SwingAnimation.git", .upToNextMajor(from: "2.0.0"))
 ]
 ```
 
@@ -38,7 +40,7 @@ dependencies: [
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=TopWidgets/SwingAnimation&type=Date)](https://star-history.com/#TopWidgets/SwingAnimation&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=platadani/SwingAnimation&type=Date)](https://star-history.com/#platadani/SwingAnimation&Date)
 
 ## License
 
